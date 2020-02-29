@@ -12,12 +12,11 @@ import SearchBar from './components/SearchBar/SearchBarContainer';
 import dummydata from './dummy-data';
 
 const App = () => {
-  const [data, setData] = useState(dummydata);
+  const [dd] = useState(dummydata);
   return (
     <div className="App">
-      {/* Add imported components here to render them */}
       <SearchBar />
-      <PostsPage data={data} setData={setData}/>
+      <PostsPage data={dd}/>
     </div>
   );
 };
