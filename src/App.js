@@ -9,7 +9,7 @@ import "./App.css";
 // import the PostsPage and SearchBar and add them to the App
 import PostsPage from './components/PostsContainer/PostsPage';
 import SearchBar from './components/SearchBar/SearchBarContainer';
-import dummydata from './dummy-data';
+
 
 const App = () => {
   const [data, setData] = useState(dummydata);
