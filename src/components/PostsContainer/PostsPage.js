@@ -5,13 +5,17 @@ import Post from "./Post";
 import "./Posts.css";
 // import data 
 
-const PostsPage = props => {
+const PostsPage = (props) => {
   // set up state for your data
   return (
     <div className="posts-container-wrapper">
-      {props.data.map(post => {
-        return(<Post post={post} />)
+      {console.log(props)}
+      {props.data.map((i) => {
+
+        return (< Post data={i} />)
       })}
+
+      {/* map through data here */}
     </div>
   );
 };
